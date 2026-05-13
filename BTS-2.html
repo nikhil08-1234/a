@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>BTS-2</title>
+        <body bgcolor="pink">
+            <div>
+                <form>
+                    <button style="background-color: hotpink;color: white;border: none;border-radius: 10px;cursor : pointer;width: 240px;height: 150px;font-family: 'Press Start 2P', cursive;letter-spacing: 5px;position: absolute;left: 25%; top: 60%;">
+                        <a href="BTS.html" style="text-decoration: none;color: white;font-size: larger;">HELLO</a>
+                    </button>
+                    <button style="background-color: hotpink;color: white;border: none;border-radius: 10px;cursor : pointer;width: 240px;height: 150px;font-family: 'Press Start 2P', cursive;letter-spacing: 5px;position: absolute;left: 55%; top: 60%;">
+                        <a href="BTS-3.html" style="text-decoration: none;color: white;font-size: larger;">KOTHI🐒</a>
+                    </button>
+                </form>
+            </div>
+
+
+            <div>
+                <img src="https://media.giphy.com/media/0WjiI0h50IIxhkeEca/giphy.gif?cid=790b761195319637968b817ab96049e80774f2871914e3e3&ep=v1_user_favorites&rid=giphy.gif&ct=s" width="300px" height="300px" style="position: absolute;left: 38%;top: 15%;"/>
+            </div>
+
+
+            <div>
+                <img src="https://media.giphy.com/media/UnKbHEesUpUtfFIpki/giphy.gif?cid=790b761195319637968b817ab96049e80774f2871914e3e3&ep=v1_user_favorites&rid=giphy.gif&ct=s" width="120px" height="120px" style="position: absolute;left: 43.5%;top: 23%;transform: scaleX(-1);"/>
+            </div>
+
+            <div>
+            <button onclick="document.getElementById('ts1').play()" style="background-color: hotpink;color: white;border: none;border-radius: 10px;cursor : pointer;width: 270px;height: 50px;font-family: 'Press Start 2P', cursive;letter-spacing: 5px;position:absolute;left: 40%;bottom: 2px;">
+                    <a href="#bg" style="text-decoration: none;color: white;font-size: larger;">SURPRISE</a>
+            </button>
+            </div>
+
+            <audio id="ts1" loop hidden>
+                <source src="S2.ogg" type="audio/ogg"/>
+            </audio>
+
+        </body>
+        <script>
+             window.onload = function () {
+            let music = document.getElementById("bgmusic");
+
+            music.play().catch(function(error) {
+                console.log("Autoplay blocked by browser");
+            });
+        };
+        </script>
+    </head>
+</html>
